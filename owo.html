@@ -15,5 +15,36 @@
     <button id="btn">Click</button>
     <div class="caja azul" id="caja">Hola</div>
     <script src="jv.js"></script>
+
+
+    <h1>Evento onfucos </h1>
+
+
+    <form action="" id="form">
+        <div><input type="text" name="" id="curso">Curso</div>
+        <div><input type="text" name="" id="duracion" onfocus="foco(this)
+            ">Duracion</div>
+        <div><input type="checkbox" name="" id="chk">Cambiar</div>
+       </form>
+    
+       <script>
+        const input = document.querySelector('#curso');
+    
+        input.addEventListener('focus', (e) =>{
+            console.log(e);
+            console.dir(e.target);
+            e.target.style.background = "tomato";
+        })
+    
+         input.addEventListener('blur', (e) =>{
+            e.target.style.background = "white";
+         })
+
+         function foco (objeto){
+            console.log(objeto);
+            objeto.style.background = "yellow";
+         }
+
+       </script>
 </body>
 </html>
