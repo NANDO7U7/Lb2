@@ -8,11 +8,12 @@ function cambio()
     {
         caja.classList.add('azul');
         contador=1;
+    }
      else{
         caja.classList.remove('azul');
         contador=0;
      }
-    }
+    
 }
 
 
