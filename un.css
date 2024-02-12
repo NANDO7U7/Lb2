@@ -1,11 +1,57 @@
+.btn{
+    border: rgb(211, 159, 159);
+    position:absolute;
+    left: 10px;
+
+}
+.btn1{
+    border: rgb(61, 61, 172);
+    position: relative;
+    left: 5px;
+}
+.caja1{
+    border: rgb(255, 0, 13);
+    width: 100px;
+    margin: 40px;
+    height: 30px;
+    padding: 10px;
+    float: left;
+}
 .caja{
-border: red solid 2px;
-width: 100px;
-margin: 20px;
+border: rgb(67, 182, 102) solid 2px;
+width: 150px;
+margin: 50px;
+padding: 18px;
+float: left;
+}
+.caja2{
+    border: yellow;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.6;
+    float: right;
+}
+.cajaverde{
+    clear: both;
+    border:  rgb(109, 1, 25) 2px solid;
+    background-color: rgb(5, 201, 168);
+    color: white;
 
 }
 .caja.azul{
-    border:  rgb(0, 0, 0) 2px solid;
+    border:  rgb(212, 4, 4) 2px solid;
     background-color: blue;
     color: white;
 }
+.caja.roja{
+    border:  rgb(175, 147, 147) 2px solid;
+    background-color: rgb(199, 116, 48);
+    color: white;
+}
+.estiloClasico {
+    color: white;
+    background-color: rgb(221, 35, 35);
+    font-family: Arial, sans-serif;
+  }
+  

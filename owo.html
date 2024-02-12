@@ -11,15 +11,26 @@
 
 </head>
 <body>
-    <h1>Listado de productos en el carrito: </h1>
-    <button id="btn">Click</button>
-    <div class="caja azul" id="caja">Hola</div>
+    <h1>Listado de Evento Click </h1>
+    <button id="btn">Click 1</button>
+    <button id="btn1">Click 2</button>
+    <button id="btn2">Click 3</button>
+
+
+    <div class="caja azul" id="caja">Cuando el evento del  boton se ejecute cambie la clase y color de esta caja.</div>
+    <div class="caja roja" id="caja1">Te dare mas ejemplos de ellos que tambien se pueden cambiar de color o los que quieras</div>
+    <div class="caja verde"id="caja2">Finalmente, agregamos el evento click a los botones utilizando el método addEventListener. Cuando se hace clic en un botón, se llama a la función cambiarColor con la caja y el color correspondientes</div>
+
+    <div id="elemento1">Pasa el mouse por aquí</div>
+    <div id="elemento2">Pasa el mouse por aquí</div>
+    <div id="elemento3">Pasa el mouse por aquí</div>
+
     <script src="jv.js"></script>
 
 
+
+
     <h1>Evento onfucos </h1>
-
-
     <form action="" id="form">
         <div><input type="text" name="" id="curso">Curso</div>
         <div><input type="text" name="" id="duracion" onfocus="foco(this)
@@ -27,24 +38,28 @@
         <div><input type="checkbox" name="" id="chk">Cambiar</div>
        </form>
     
-       <script>
-        const input = document.querySelector('#curso');
+<script>
+            const input = document.querySelector('#curso');
     
-        input.addEventListener('focus', (e) =>{
-            console.log(e);
-            console.dir(e.target);
-            e.target.style.background = "tomato";
-        })
-    
-         input.addEventListener('blur', (e) =>{
-            e.target.style.background = "white";
-         })
+    input.addEventListener('focus', (e) =>{
+        console.log(e);
+        console.dir(e.target);
+        e.target.style.background = "tomato";
+    })
 
-         function foco (objeto){
-            console.log(objeto);
-            objeto.style.background = "yellow";
-         }
+     input.addEventListener('blur', (e) =>{
+        e.target.style.background = "white";
+     })
 
-       </script>
+     function foco (objeto){
+        console.log(objeto);
+        objeto.style.background = "yellow";
+     }
+
+</script>
+
 </body>
+
+
+
 </html>
