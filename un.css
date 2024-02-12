@@ -38,4 +38,8 @@ body {
   .verde {
     background-color: #58D68D;
   }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
