@@ -24,25 +24,32 @@ btn2.addEventListener("click", function() {
   });
 
   //elementos mauseover
-var elemento1 = document.getElementById("elemento1");
-var elemento2 = document.getElementById("elemento2");
-var elemento3 = document.getElementById("elemento3");
 
-function aplicarEstilo(elemento) {
-  elemento.classList.add("estiloClasico");
-}
+var elemento = document.getElementById("miElemento");
 
-elemento1.addEventListener("mouseover", function() {
-  aplicarEstilo(elemento1);
+elemento.addEventListener("mouseover", function() {
+  elemento.style.backgroundColor = "yellow";
 });
 
-elemento2.addEventListener("mouseover", function() {
-  aplicarEstilo(elemento2);
-});
+  
+//Evento focus
 
-elemento3.addEventListener("mouseover", function() {
-  aplicarEstilo(elemento3);
-});
+const input = document.querySelector('#curso');
+    
+input.addEventListener('focus', (e) =>{
+    console.log(e);
+    console.dir(e.target);
+    e.target.style.background = "tomato";
+})
+
+ input.addEventListener('blur', (e) =>{
+    e.target.style.background = "white";
+ })
+
+ function foco (objeto){
+    console.log(objeto);
+    objeto.style.background = "yellow";
+ }
 
 
 
