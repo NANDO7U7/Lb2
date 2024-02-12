@@ -42,4 +42,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+.nombres{
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
   
+
+}  
