@@ -1,19 +1,13 @@
-//elementos click
-var btn = document.getElementById("btn");
+//cambia solo dando un click y asi se queda
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
 
-var caja = document.getElementById("caja");
 var caja1 = document.getElementById("caja1");
 var caja2 = document.getElementById("caja2");
 
 function cambiarColor(caja, color) {
   caja.style.backgroundColor = color;
 }
-
-btn.addEventListener("click", function() {
-  cambiarColor(caja, "green");
-});
 
 btn1.addEventListener("click", function() {
   cambiarColor(caja1, "blue");
@@ -50,7 +44,26 @@ input.addEventListener('focus', (e) =>{
     console.log(objeto);
     objeto.style.background = "yellow";
  }
-
-
+//cambio dando click por click
+ var btn = document.getElementById("btn"),
+ caja = document.getElementById("caja")
+ contador=0;
+ 
+ function cambio()
+ {
+     if(contador==0)
+     {
+         caja.classList.add('azul');
+         contador=1;
+     }
+      else{
+         caja.classList.remove('azul');
+         contador=0;
+      }
+     
+ }
+ 
+ 
+ btn.addEventListener("click",cambio,true)
 
 
